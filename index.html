@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.js">
+</head>
+<body>
+<section class="Home" id="home">
+<div class="background-elements"></div>
+
+
+    <nav>
+        <div class="nav-logo">PortofolioKu</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#projek">Projek</a>
+            <a href="#about">About me </a>
+        </div>
+            <button class="nav-contact">Contact</button>
+    </nav>
+
+
+    <div class="container">
+        <div class="content">
+            <!-- <p class="hai">Hai namaku</p> -->
+            <h1>Muhammad Habib Ar-Rasyid Ashar</h1>
+            <p>
+                Kata Kata hari ini: Dua tiga kucing berlari, Menulis kode hingga pagi. Dua tiga bunga melati, Debug error pakai Gpti. (yang penting buakn lorem ipsum kan mas)
+            </p>
+            <div class="buttons">
+                <button>Download CV</button>
+                <button>Project</button>
+            </div>
+            <div class="social-icons">
+         
+                <a href="https://www.instagram.com/habibarrasyid17/"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/HiddenCanvas"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="bg-main-container">
+            <div class="bg-main">
+              <spline-viewer url="https://prod.spline.design/BoWg-dch2T9e59sl/scene.splinecode"></spline-viewer>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ==================================================================================================================================== -->
+
+<section class="projek" id="projek" style="min-height: 100vh; display: flex; align-items: center;">
+  <div style="width:100%;">
+    <div class="section-head">
+      <h2>Projekku.</h2>
+      <p style="max-width:780px; color: #bdbbd1; margin-top:1rem;">
+        berikut adalah beberapa project yang pernah saya buat muulai dari semester 1 hingga sekarang
+      </p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <article class="project-card">
+        <div class="project-screenshot">
+          <img src="../picture/foto mahalink.jpg" alt="Project 1">
+        </div>
+        <h3 class="project-title">MahaLink</h3>
+        <p class="project-desc">
+          Sistem informasi akademik berbasis terminal yang mirip dengan SIAKAD UNEJ ini dikembangkan menggunakan Python, di mana data dosen dan mahasiswa dikelola dalam file CSV yang dapat diakses melalui antarmuka baris perintah.        </p>
+        <div class="project-tags">
+          <span class="project-tag">#Python</span>
+          <span class="project-tag">#mongodb</span>
+          <span class="project-tag">#tailwind</span>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <div class="project-screenshot">
+          <img src="../picture/foto puspita.png" alt="Project 2">
+        </div>
+        <h3 class="project-title">Puspita</h3>
+        <p class="project-desc">
+          PUSPITA adalah aplikasi desktop berorientasi objek yang dirancang untuk membantu petani dalam membeli pupuk dan pestisida secara online, memberikan rekomendasi perawatan dan penanggulangan hama berdasarkan data yang tersedia, serta membantu pencatatan transaksi penjualan dan pemantauan stok.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">#react</span>
+          <span class="project-tag">#restapi</span>
+          <span class="project-tag">#scss</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================================================================================================================================== -->
+
+<!-- ===== About / ===== -->
+    <section id="about" class="about-me">
+        <div class="about-grid">
+            <!-- Text Section -->
+            <div class="overview-hero">
+                <h3>About Me</h3>
+                <p> Hai aku habib dan aku adalah mahasiswa Teknologi Informasi semester 3 di Universitas Jember. Saya memiliki ketertarikan pada mata kuliah Pemrograman Web (PWeb) karena dapat mengasah kemampuan dalam membangun website yang interaktif. Bagi saya, PWeb menjadi sarana penting untuk mengembangkan keterampilan yang relevan dengan kebutuhan dunia teknologi saat ini.</p>
+                
+                <!-- Feature Cards -->
+                <div class="feature-row">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="feature-title">Clean Code</div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="feature-title">Responsive</div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="feature-title">Performance</div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="feature-title">Team Player</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Photo Section -->
+            <div class="profile-section">
+                <div class="profile-photo-container">
+                    <img src="../picture/foto.png" alt="Profile Photo" class="profile-photo">
+                    <div class="profile-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+</body>
+</html>
